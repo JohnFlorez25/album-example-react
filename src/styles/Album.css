@@ -1,137 +1,45 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
-
-*{
-  box-sizing: border-box;
-  padding: 0;
+* {
   margin: 0;
-    color:white;
-  font-family: Quicksand, Arial, san-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-  height: 100vh;
-  overflow: hidden;
-}
-
-.container{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background:#222831;
-  height:100%;
-}
-
-
-.card{
-  width:450px;
-  background: #393E46;
-  border-radius: 11px;
-  padding: 7px;
-}
-
-.card > .content-layout{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  margin: 0px 10px;
-}
-
-.card > .content-layout img {
-  width:160px;
-  border-radius: 7px;
-
-}
-
-.button-layout{
-  padding:7px;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  margin-bottom: 7px
-}
-
-.card > .content-layout > figure {
-  margin-bottom: 7px;
-}
-.content > .title {
-  font-weight: 400;
-  font-size: 1.3em; 
-}
-
-.content > .description {
-  color: #8A8C8D;
-  margin: 7px 0;
-}
-
-
-.content > .rating {
-  color: #BBBBBB;
-  margin-top: 10px;
-  margin-bottom: 5px
-}
-
-.card > .content-layout > .content {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  margin-left: 10px;
-}
-
-.button{
-  font-weight: 700;
-  font-size:1.34em;
-  margin:4px;
-  
-  border-radius: 6px;
+.App {
+  font-family: sans-serif;
   text-align: center;
-  text-decoration: none;
-  padding: 12px 0px;
-  background:#F96D00;
-  border:3px solid #F96D00;
-  color: white;
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
 }
 
-
-.button.bordered {
-  border:3px solid #F96D00;
-  background: transparent;
-  color: #F96D00;
-}
-
-.button:hover{
-  background:white;
-  border-color:white;
-  color:#F96D00;
-}
-
-.rate-icons{
-  display: -webkit-box;
-  display: -ms-flexbox;
+.album-container {
+  width: 470px;
+  height: 200px;
   display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 3px 7px 0px rgba(134, 134, 134, 0.73);
+  margin: 20px;
 }
 
-.rate-icons div:first-child{
-  margin-left: 0;
+.album-contenido {
+  padding: 20px;
+  padding-left: 30px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.icon {
-  width: 15px;
-  height: 15px;
-  margin:4px;
-  background: transparent;
-  border: 2px solid #F96D00;
-  border-radius: 100%;
+.album-titulo {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.album-subtitulo {
+  margin-top: 3px;
+  font-size: 15px;
+  color: rgb(109, 109, 109);
+  font-weight: normal;
 }
 
-.icon.is-active {
-  background: #F96D00;
+.cronologia {
+  color: rgb(141, 141, 141);
+  font-size: 14px;
 }

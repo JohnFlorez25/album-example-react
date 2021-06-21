@@ -3,18 +3,20 @@ import "../styles/Album.css";
 
 const Album = (props) => {
   return (
-    <div className="container">
-      <div className="card">
-        <div className="content-layout">
-          <h1 className="title"> {props.informacion.agrupacion}</h1>
-          <h2 className="description"> {props.informacion.genero} </h2>
-          <h3 className="content"> {props.informacion.artista} </h3>
-          <h3 className="content"> {props.informacion.titulo} </h3>
-          <h3 className="content"> {props.informacion.lanzamiento} </h3>
-          <figure> 
-            <img src={props.informacion.portada} alt={props.informacion.titulo} />
-          </figure>
+    <div className="album-container">
+      <img height="100%" src={props.informacion.portada} alt={props.informacion.titulo} />
+      <div className="album-contenido">
+        <div className="album-descripcion">
+         <h3 className="album-titulo"> {props.informacion.artista}</h3>
+         <h3 className="album-subtitulo"> {props.informacion.titulo} </h3>
+         <h4 className="album-subtitulo"> 
+          {props.informacion.lanzamiento} - <span className="cronologia">Hace x años</span>
+        </h4>
         </div>
+        <div className="album-pie">
+            <h4 className="album-subtitulo"> {props.informacion.agrupacion} </h4>
+            <h4 className="album-subtitulo"> {props.informacion.genero} </h4>
+        </div>            
       </div>
     </div>
   );
